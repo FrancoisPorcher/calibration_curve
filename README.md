@@ -1,25 +1,30 @@
-# Calibration Curve
+# 📊 Calibration Curve
 
 Calibration Curve is an advanced concept in machine learning that allows to improve the performance of classifier even after they have been already trained.
 
+The issue is that a trained classifier is uncalibrated, meaning what it is overconfident or underconfident in some regions. 
 
+The calibration of probabilities allows us to transform the predicted probabilities of a model into a probability distribution that matches the empirical distribution of the target variable.
 
-# 🤖 Introduction to AutoEncoders with MNIST
-
-This is an implementation of an AutoEncoder (One linear, the other with convolutions), trained on the MNIST database
+In other words we chain a new model to the trained model that predicts calibrated probabilities.
 
 # 🎇 Demo
 
-## AutoEncoder with Convolutions
+## Random Forest
 
-This AutoEncoder works much better than a simple Linear AutoEncoder.
-First row is the real image, second row is the reconstructed image after encoding/decoding.
+We can clearly see that after calibration, the probabilities are much closer to the empirical distribution we are aiming for.
 
-![Screenshot](autoencoder2.png)
+![Screenshot](random_forest_curve.png)
 
-## AutoEncoder Linear
+Same phenomenon.
 
-![Screenshot](autoencoder1.png)
+## SVC (Support Vector Classifier)
+
+![Screenshot](svc_curve.png)
+
+# ➡️ Conclusion:
+
+Curve Calibration is often the last step in the fine tuning of a model, but it can significantly improve the quality of predictions, and hence should not be overlooked!
 
 
 # 🙋🏻‍♂️ Authors
