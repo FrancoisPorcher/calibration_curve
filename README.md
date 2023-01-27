@@ -8,6 +8,10 @@ The calibration of probabilities allows us to transform the predicted probabilit
 
 In other words we chain a new model to the trained model that predicts calibrated probabilities.
 
+A very concrete example:
+
+Imagine out model outputs a probability of 0.78, has a threshold of 0.5, and is given a cholesterol of 235 as input feature. Even though in this case the model correctly predicted that the patient has a heart disease (because 0.78 > 0.5), the model is over confident because only 69% of the population having a similar cholesterol have a heart disease. This is exactly this phenomenon of overconfidence that we are trying to calibrate.
+
 # 🎇 Demo
 
 ## Random Forest
