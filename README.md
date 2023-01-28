@@ -10,8 +10,9 @@ In other words we chain a new model to the trained model that predicts calibrate
 
 ### A very concrete example:
 
-Let's imagine our model has a cholesterol of 235 as input feature, and predicts a probability of 0.78 of having cardiovascular issues.
-Let's imagine that this patient really has cardiovascular issues, and that our model has a threshold of 0.5. So in this case our model outputs a correct prediction (0.78 > 0.5).
+Let's imagine our model has a cholesterol of 235 as input feature, and outputs a probability of 0.78 that the patient has cardiovascular issues.
+Let's imagine that this patient really has cardiovascular issues, and that our model has a threshold of 0.5. 
+So in this case our model outputs a **correct prediction** (0.78 > 0.5).
 
 **However**:
 
