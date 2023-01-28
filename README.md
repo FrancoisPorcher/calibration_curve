@@ -10,7 +10,13 @@ In other words we chain a new model to the trained model that predicts calibrate
 
 ### A very concrete example:
 
-Imagine out model outputs a probability of 0.78, has a threshold of 0.5, and is given a cholesterol of 235 as input feature. Even though in this case the model correctly predicted that the patient has a heart disease (because 0.78 > 0.5), the model is over confident because only 69% of the population having a similar cholesterol have a heart disease. This is exactly this phenomenon of overconfidence that we are trying to calibrate.
+Let's imagine our model has a cholesterol of 235 as input feature, and predicts a probability of 0.78 of having cardiovascular issues.
+Let's imagine that this patient really has cardiovascular issues, and that our model has a threshold of 0.5. So in this case our model outputs a correct prediction (0.78 > 0.5).
+
+**However**:
+
+The model is over confident because only 69% of the population having a similar cholesterol have a heart disease. 
+This is exactly the phenomenon of overconfidence/underconfidence that we are trying to calibrate.
 
 # 🎇 Demo
 
