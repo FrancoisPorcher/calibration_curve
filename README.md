@@ -2,7 +2,7 @@
 
 Calibration Curve is an advanced concept in machine learning that allows to improve the performance of classifier even after they have been already trained.
 
-The issue is that a trained classifier is uncalibrated, meaning what it is overconfident or underconfident in some regions. 
+The issue is that a trained classifier is uncalibrated, meaning that it is overconfident or underconfident in some regions. 
 
 The calibration of probabilities allows us to transform the predicted probabilities of a model into a probability distribution that matches the empirical distribution of the target variable.
 
